@@ -17,10 +17,10 @@
     --clr-neutral-hsl-700: 224, 30%, 27%; 
     
     
-    --clr-neutral-hsl-100: hsl(var(--clr-neutral-hsl-100));
-    --clr-neutral-hsl-200: hsl(var(--clr-neutral-hsl-200));
-    --clr-neutral-hsl-300: hsl(var(--clr-neutral-hsl-300));
-    --clr-neutral-hsl-700: hsl(var(--clr-neutral-hsl-700));
+    --clr-neutral-100: hsl(var(--clr-neutral-hsl-100));
+    --clr-neutral-200: hsl(var(--clr-neutral-hsl-200));
+    --clr-neutral-300: hsl(var(--clr-neutral-hsl-300));
+    --clr-neutral-700: hsl(var(--clr-neutral-hsl-700));
 
     --clr-primary-400: hsl(var(--clr-primary-hsl-400));
     --clr-primary-500: hsla(var(--clr-primary-hsl-500)); 
@@ -51,11 +51,24 @@
     --fs-700: 1.75rem;
     --fs-800: 2rem;
     --fs-900: 5rem;
+}
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
+* {
+    margin: 0;
+    font: inherit;
+}
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
 
-    
-
-
-
-
+body {
+    font-family: var(--font-family-default);
+    font-size: var(--fs-400);
+    color: var(--clr-neutral-700);
 }
