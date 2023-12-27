@@ -22,22 +22,30 @@
     --clr-neutral-hsl-300: hsl(var(--clr-neutral-hsl-300));
     --clr-neutral-hsl-700: hsl(var(--clr-neutral-hsl-700));
 
-    --clr-primary-hsl-400: hsl(var(--clr-primary-hsl-400));
-    --clr-primary-hsl-500: hsla(var(--clr-primary-hsl-500)); 
-    --clr-secondary-hsl-400: hls(var(clr-secondary-hsl-400)); 
+    --clr-primary-400: hsl(var(--clr-primary-hsl-400));
+    --clr-primary-500: hsla(var(--clr-primary-hsl-500)); 
+    --clr-secondary-400: hsl(var(clr-secondary-hsl-400)); 
 
     --gradient-primary: linear-gradient(
-        var(--clr-primary-hsl-400),
+        var(--clr-primary-400),
         var(--clr-secondary-400));
 
     --gradient-to-transparent: linear-gradient(
         var(--clr-primary-500),
         var(--clr-secondary-hsl-400));
 
-    --clr-red:
-    --clr-yellow:
-    --clr-green:
-    --clr-blue:
+    --clr-accent-1: 0, 100%, 67%; 
+    --clr-accent-2: 39, 100%, 56%;
+    --clr-accent-3: 166, 100%, 37%;
+    --clr-accect-4: 234, 85%, 45%;
+
+    --font-family-default: 'hankenfrotesk'
+    
+    --fw-regular: 500;
+    --fw-bold: 700;
+    --fw-black: 800;
+
+    
     
 
 
