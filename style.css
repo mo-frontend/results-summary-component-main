@@ -25,7 +25,7 @@
 
   --clr-primary-400: hsl(var(--clr-primary-hsl-400));
   --clr-primary-500: hsla(var(--clr-primary-hsl-500));
-  --clr-secondary-400: hsl(var(clr-secondary-hsl-400));
+  --clr-secondary-400: hsl(var(--clr-secondary-hsl-400));
 
   --gradient-primary: linear-gradient(
     var(--clr-primary-400),
@@ -100,5 +100,5 @@ body {
 }
 .button:hover,
 .button:focus-visible {
-    background: var(--gradient-primary);
+  background: var(--gradient-primary);
 }
