@@ -34,8 +34,9 @@
 
   --gradient-to-transparent: linear-gradient(
     var(--clr-primary-500),
-    var(--clr-secondary-hsl-400)
+    hsl(var(--clr-secondary-hsl-500))
   );
+  
 
   --clr-accent-1: 0, 100%, 67%;
   --clr-accent-2: 39, 100%, 56%;
@@ -100,11 +101,21 @@ body {
   }
 
 .result-score {
+  display: grid;
+  place-content: center;
   width: 12rem;
   margin-inline: auto;
   background: var(--gradient-to-transparent);
-  border-radius: 50%;
   aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  }
+
+  .result-score span {
+    display: block;
+    font-size: var(--fs-900);
+    font-weight: var(--fw-black);
+    line-height: 1;
+    color: var(--clr-neutral-100);
   }
 
 .button {
@@ -159,3 +170,11 @@ body {
  .summary {
   padding: var(--padding);
  }
+
+ .result-rank {
+  color: var(--clr-neutral-100);
+  font-size: var(--fs-700);
+  font-weight: var(--fw-bold);
+ }
+
+ .
