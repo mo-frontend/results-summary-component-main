@@ -40,7 +40,7 @@
   --clr-accent-1: 0, 100%, 67%;
   --clr-accent-2: 39, 100%, 56%;
   --clr-accent-3: 166, 100%, 37%;
-  --clr-accect-4: 234, 85%, 45%;
+  --clr-accent-4: 234, 85%, 45%;
 
   --font-family-default: "Hanken Grotesk", sans-serif;
 
@@ -156,9 +156,13 @@ body {
   }
 }
 
+
+
 .reults {
   border-radius: 0 0 var(--border-redius) var(--border-redius);
   text-align: center;
+  padding: 
+     var(--padding) calc(var(--padding) * 1.5);
   background: var(--gradient-primary);
   color: hsl(var(--clr-neutral-hsl-100), 0.7);
 }
@@ -168,15 +172,16 @@ body {
     border-radius: var(--border-redius);
   }
 }
-.reults,
-.summary {
-  padding: var(--padding);
-}
+
 
 .result-rank {
   color: var(--clr-neutral-100);
   font-size: var(--fs-700);
   font-weight: var(--fw-bold);
+}
+
+.summary {
+  padding: var(--padding);
 }
 
 .summary-item {
@@ -214,4 +219,13 @@ body {
 }
 .summary-item[data-item-type="accent-4"] {
   --item-color: var(--clr-accent-4);
+}
+
+.summary-score {
+  font-weight: var(--fw-black);
+  color: hsl(var(--clr-neutral-hsl-700));
+}
+
+.summary-score span {
+  color: var(--clr-neutral-700);
 }
