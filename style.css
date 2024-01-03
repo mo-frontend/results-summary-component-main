@@ -92,13 +92,13 @@ body {
   flex-wrap: wrap;
 }
 
-.grid-flow {
+.gird-flow {
   display: grid;
   align-content: start;
   gap: 1rem;
 }
 
-.grid-flow[data-spacing="largr"] {
+.grid-flow[data-spacing="large"] {
   gap: 2rem;
 }
 
