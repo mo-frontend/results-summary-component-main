@@ -91,7 +91,7 @@ body {
   flex-wrap: wrap;
 }
 
-.gird-flow {
+.grid-flow {
   display: grid;
   align-content: start;
   gap: 1rem;
